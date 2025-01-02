@@ -1,0 +1,118 @@
+/* Stile generale */
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(to left, #87ceeb, #f0f8ff);
+    color: #333;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+/* Contenitore principale */
+.container {
+    max-width: 600px;
+    margin: 50px auto;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    padding: 20px;
+}
+
+/* Titoli */
+h1 {
+    font-size: 2.5em;
+    color: #007acc;
+    margin-bottom: 20px;
+}
+
+h3 {
+    font-size: 1.5em;
+    color: #333;
+    margin-top: 30px;
+}
+
+/* Sezione di ricerca */
+.search-section {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+#cityInput {
+    border: 1px solid #ccc;
+    border-radius: 50px;
+    padding: 10px 15px;
+    font-size: 1.1em;
+    width: 70%;
+    outline: none;
+}
+
+#cityInput:focus {
+    border-color: #007acc;
+    box-shadow: 0 0 5px rgba(0, 122, 204, 0.5);
+}
+
+button {
+    background: #007acc;
+    color: #fff;
+    border: none;
+    border-radius: 50px;
+    padding: 10px 20px;
+    font-size: 1.1em;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+button:hover {
+    background: #005f99;
+}
+
+/* Informazioni meteo */
+.weather-info {
+    margin-top: 20px;
+    font-size: 1.2em;
+}
+
+.weather-info h2 {
+    font-size: 1.8em;
+    color: #007acc;
+}
+
+.weather-info p {
+    margin: 5px 0;
+}
+
+#imgContainer img {
+    width: 80px;
+    height: 80px;
+    margin-top: 10px;
+}
+
+/* Lista città recenti */
+.recent-cities ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+}
+
+.recent-cities li {
+    background: #f0f8ff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 8px 15px;
+    font-size: 0.9em;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.recent-cities li:hover {
+    background: #007acc;
+    color: #fff;
+    transform: translateY(-2px);
+}
